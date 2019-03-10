@@ -1,0 +1,26 @@
+{
+    "name": "CustomTwitch",
+    "homepage_url": "https://www.CustomTwitch.com",
+    "version": "0.1",
+    "manifest_version": 2,
+    "description": "This extension allows you to customise your viewing experience.",
+    "icons": {
+        "16": "icon/icon16.png",
+        "48": "icon/icon48.png",
+        "128": "icon/icon128.png"
+    },
+
+    "web_accessible_resources" : ["https://www.30142492.com/features/features.js"],
+
+    "browser_action": {
+        "default_title": "CustomTwitch",
+        "default_icon": "icon/icon.png",
+        "default_popup": "panel.html"
+    },
+    "content_scripts": [{
+        "js": ["jquery.js", "autoactions.js"],
+        "matches": ["*://*.twitch.tv/*"]
+    }],
+    "permissions": ["storage", "activeTab", "http://*/*", "https://*/*"],
+    "content_security_policy": "script-src 'self'; object-src 'self'"
+}

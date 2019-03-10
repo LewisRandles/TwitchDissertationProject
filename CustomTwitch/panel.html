@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="style/style.css" />
+        <script type="text/javascript" src="jquery.js"></script>
+    </head>
+
+    <body>
+
+        <div class="customtwitch" id="cse">
+
+            <div class="top">
+
+                <div class="icon"> <img src="icon/icon.png" /> </div>
+
+                <div class="ts">
+                    <div class="title">
+                        <p> CustomTwitch </p>
+                    </div>
+                    <div class="subtitle">
+                        <p> Who needs that? </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <ul class="tabs" id="tabs">
+
+                <li id="home" class="hometab">
+
+                    <input type="radio" name="tabs" id="tabs1" />
+                    <label class="eh" for="tabs1"> Home </label>
+
+                    <div id="tabs-content1" class="tabs-content animated fadeIn">
+
+                        <div class="utilities">
+
+                            <div class="hometop">
+
+                                <span class="logot">
+
+                                    <span class="ltss"> <img class="lts" src="icon/icon.png"/> </span>
+
+                                    <span class="htth">
+                                        <div class="htt"> CustomTwitch </div>
+                                        <span class="htv"> Version 0.1 </span>
+                                    </span>
+
+                                    <div class="homemsg">An extension for customising your experience on Twitch.tv.  </div>
+
+                                </span>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </li>
+
+                <li id="setting">
+                    <input type="radio" checked name="tabs" id="tabs2" />
+                    <label class="eh" for="tabs2"> Features </label>
+                    <div id="tabs-content2" class="tabs-content animated fadeIn">
+                        <form>
+                            <ul class="utilities commentlist" id="search_items"> </ul>
+                        </form>
+                    </div>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <script src="core.js"></script>
+
+    </body>
+
+</html>
